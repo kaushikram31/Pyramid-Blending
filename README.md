@@ -32,11 +32,11 @@ For applying the smoothening filter, the convolution function def conv2(f, w) wh
 The code starts with giving the user an option of choosing the shape of the mask (ie. Rectangle and Ellipse). Two definitions are made in the code, draw_rectangle & draw_ellipse, to separately process the corresponding Rectangle or Ellipse selection. Once the choice is made, the foreground image window pops us prompting the user to perform area selection. The starting coordinates of the mouse are set to (-1,-1). The user is required to start drawing on the image by pressing the left mouse button, logging in the initial x and y coordinates (referenced as ax, ay in the code). Once the user releases the left mouse button, the ending x and y coordinates
 are logged in (referenced as zx, zy in the code). Four attributes, initial coordinates, final coordinates and the processed image from the selection are given to the create_mask_fimg for binary mask creation using OpenCV.
 
-![image](https://user-images.githubusercontent.com/117616581/208563519-89a8c014-189b-4770-a4e2-0d800d82e258.png)
+![image](https://user-images.githubusercontent.com/117616581/208563721-0d4c4152-a084-47cf-bfba-cc449889595a.png)
 
-![image](https://user-images.githubusercontent.com/117616581/208563559-31a8bf6f-66c3-435d-9c99-07f1589229f1.png)
+![image](https://user-images.githubusercontent.com/117616581/208563741-cabd5558-ab92-41e6-ac0d-599c9d8c80b4.png)
 
-![image](https://user-images.githubusercontent.com/117616581/208563616-d1efc956-4546-4b9c-839d-0f2eff7578d7.png)
+![image](https://user-images.githubusercontent.com/117616581/208563747-04ab801b-5938-4ac6-979c-539571de3726.png)
 
 **References**
 
