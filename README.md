@@ -19,3 +19,25 @@ In this technique of blending follows the following procedure: The Gaussian pyra
 
 The down sampler for gaussian pyramid and up sampler for Laplacian Pyramid is done using nearest neighbour interpolation. Nearest neighbour interpolation is a method of interpolation in which the value of a data point is the same as the value of its nearest data point. It is a form of interpolation that is commonly used in image processing and computer graphics applications. This method of interpolation is useful when the data points are known exactly and the interpolated values are not required to have any particular accuracy. It is a simple approach but can be computationally expensive, since all data points must be considered in order to determine
 the interpolated value.
+
+![image](https://user-images.githubusercontent.com/117616581/208563282-2894a66c-4f67-4683-8d53-0bb2d2604ce5.png)
+
+
+Here in this project, we are implementing a Gaussian kernel as the smoothening function. A smoothening filter is a type of image filter used to reduce image noise and detail. It is used to reduce the level of noise in an image by blurring or smoothing the image's details or fine features. Smoothening filters are often used to reduce the visual noise in digital images and can be implemented using various methods such as Gaussian blur, median filtering, or non-linear filters.
+
+For applying the smoothening filter, the convolution function def conv2(f, w) which was self-implemented from scratch has been used. The user has been given different padding options, such as zero padding, copy edge, wrap around and reflect across edge. The convolution function has been built to handle both RGB and grey scale images.
+
+**Graphical User Interface**
+
+The code starts with giving the user an option of choosing the shape of the mask (ie. Rectangle and Ellipse). Two definitions are made in the code, draw_rectangle & draw_ellipse, to separately process the corresponding Rectangle or Ellipse selection. Once the choice is made, the foreground image window pops us prompting the user to perform area selection. The starting coordinates of the mouse are set to (-1,-1). The user is required to start drawing on the image by pressing the left mouse button, logging in the initial x and y coordinates (referenced as ax, ay in the code). Once the user releases the left mouse button, the ending x and y coordinates
+are logged in (referenced as zx, zy in the code). Four attributes, initial coordinates, final coordinates and the processed image from the selection are given to the create_mask_fimg for binary mask creation using OpenCV.
+
+![image](https://user-images.githubusercontent.com/117616581/208563519-89a8c014-189b-4770-a4e2-0d800d82e258.png)
+
+![image](https://user-images.githubusercontent.com/117616581/208563559-31a8bf6f-66c3-435d-9c99-07f1589229f1.png)
+
+![image](https://user-images.githubusercontent.com/117616581/208563616-d1efc956-4546-4b9c-839d-0f2eff7578d7.png)
+
+**References**
+
+[1] https://becominghuman.ai/image-blending-using-laplacian-pyramids-2f8e9982077f
